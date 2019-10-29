@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="#" method="POST" >
+	<p>
+		Name:
+		<input type="text" name="username"  required= "" placeholder="name" class="input">
+		<span class="error"></span>
+	</p>
+	<p>
+		Gender:
+		<p class=" gender" ><input type="radio" name="checkbox" value="" >
+		<span class="error"></span>Nam</p>
+		<p class="gender"><input type="radio" name="checkbox" value="">
+		<span class="error"></span>Nu</p>
+	</p>
+	<p>
+		Email:
+		<input type="text" name="Email"  required="" class="input" placeholder="email">
+		<span class="error"></span>
+	</p>
+	<p>
+		Date of birth:
+		<input type="date" name="date"  required="" class="input-date">
+		<span class="error"></span>
+	</p>
+	<div class="demo-content">
+		<div class="row">
+			<label>Country:</label> <br/> <select name="country" id="country-list" class="demoInputBox" onchange="getState(this.value);">
+				<option value="" disabled="" selected="">Select Country</option>
+                <option value="1">Indonesia</option>
+                <option value="2">Myanmar</option>
+                <option value="3">Thai Lan</option>
+                <option value="4">Viet Nam</option>
+                <option value="5">Malaysia</option>
+			</select>
+		</div>
+		<div class="row">
+            <label>State:</label><br /> <select name="state"
+                id="state-list" class="demoInputBox"
+                onChange="getCity(this.value);">
+                <option value="">Select State</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>City:</label><br /> <select name="city"
+                id="city-list" class="demoInputBox" >
+                <option value="">Select City</option>
+                <option value="1">Da Nang</option>
+                <option value="2">Quang Nam</option>
+            </select>
+        </div>
+	</div>
+	<p>
+		<input type="submit" name="register" value="register" required="" class="input-date">
+	</p>
+</body>
+</html>
